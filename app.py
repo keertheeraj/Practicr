@@ -29,9 +29,9 @@ def assets(path):
 
 
 # ACS Integration Settings
-AZURE_SEARCH_SERVICE = os.environ.get("AZURE_SEARCH_SERVICE")
-AZURE_SEARCH_INDEX = os.environ.get("AZURE_SEARCH_INDEX")
-AZURE_SEARCH_KEY = os.environ.get("AZURE_SEARCH_KEY")
+AZURE_SEARCH_SERVICE = "jman-cognitive-search"
+AZURE_SEARCH_INDEX ="jman-openai-index-0001"
+AZURE_SEARCH_KEY = "aNGbKqjRa8fwtvfM3KTGkoFai5PAjj56CX52JaaaZyAzSeDVMW6q"
 AZURE_SEARCH_USE_SEMANTIC_SEARCH = os.environ.get("AZURE_SEARCH_USE_SEMANTIC_SEARCH", "false")
 AZURE_SEARCH_SEMANTIC_SEARCH_CONFIG = os.environ.get("AZURE_SEARCH_SEMANTIC_SEARCH_CONFIG", "default")
 AZURE_SEARCH_TOP_K = os.environ.get("AZURE_SEARCH_TOP_K", 5)
@@ -46,10 +46,10 @@ AZURE_SEARCH_PERMITTED_GROUPS_COLUMN = os.environ.get("AZURE_SEARCH_PERMITTED_GR
 AZURE_SEARCH_STRICTNESS = os.environ.get("AZURE_SEARCH_STRICTNESS", 3)
 
 # AOAI Integration Settings
-AZURE_OPENAI_RESOURCE = os.environ.get("AZURE_OPENAI_RESOURCE")
-AZURE_OPENAI_MODEL = os.environ.get("AZURE_OPENAI_MODEL")
-AZURE_OPENAI_ENDPOINT = os.environ.get("AZURE_OPENAI_ENDPOINT")
-AZURE_OPENAI_KEY = os.environ.get("AZURE_OPENAI_KEY")
+AZURE_OPENAI_RESOURCE = "OpenAI-JMAN"
+AZURE_OPENAI_MODEL = "gpt-35-turbo"
+AZURE_OPENAI_ENDPOINT = "https://openai-jman.openai.azure.com/openai/deployments/TestDeployment/chat/completions?api-version=2023-07-01-preview"
+AZURE_OPENAI_KEY = "2767a4b805064654913a9b85e41a8816"
 AZURE_OPENAI_TEMPERATURE = os.environ.get("AZURE_OPENAI_TEMPERATURE", 0)
 AZURE_OPENAI_TOP_P = os.environ.get("AZURE_OPENAI_TOP_P", 1.0)
 AZURE_OPENAI_MAX_TOKENS = os.environ.get("AZURE_OPENAI_MAX_TOKENS", 1000)
@@ -57,7 +57,7 @@ AZURE_OPENAI_STOP_SEQUENCE = os.environ.get("AZURE_OPENAI_STOP_SEQUENCE")
 AZURE_OPENAI_SYSTEM_MESSAGE = os.environ.get("AZURE_OPENAI_SYSTEM_MESSAGE", "You are an AI assistant that helps people find information.")
 AZURE_OPENAI_PREVIEW_API_VERSION = os.environ.get("AZURE_OPENAI_PREVIEW_API_VERSION", "2023-06-01-preview")
 AZURE_OPENAI_STREAM = os.environ.get("AZURE_OPENAI_STREAM", "true")
-AZURE_OPENAI_MODEL_NAME = os.environ.get("AZURE_OPENAI_MODEL_NAME", "gpt-35-turbo-16k") # Name of the model, e.g. 'gpt-35-turbo-16k' or 'gpt-4'
+AZURE_OPENAI_MODEL_NAME = os.environ.get("AZURE_OPENAI_MODEL_NAME", "gpt-35-turbo") # Name of the model, e.g. 'gpt-35-turbo-16k' or 'gpt-4'
 AZURE_OPENAI_EMBEDDING_ENDPOINT = os.environ.get("AZURE_OPENAI_EMBEDDING_ENDPOINT")
 AZURE_OPENAI_EMBEDDING_KEY = os.environ.get("AZURE_OPENAI_EMBEDDING_KEY")
 
